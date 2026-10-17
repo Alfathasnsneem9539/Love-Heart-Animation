@@ -1,0 +1,61 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.screen {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  overflow: hidden;
+}
+
+.screen canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.music-button {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 10;
+  padding: 11px 18px;
+  border: 1px solid rgba(255, 80, 130, 0.6);
+  border-radius: 30px;
+  background: rgba(20, 0, 8, 0.85);
+  color: #ff9ab9;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 23, 68, 0.2);
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.music-button:hover {
+  background: rgba(80, 0, 25, 0.9);
+  box-shadow: 0 0 22px rgba(255, 23, 68, 0.45);
+}
+
+.music-button:focus-visible {
+  outline: 2px solid #ff9ab9;
+  outline-offset: 4px;
+}
